@@ -5,19 +5,9 @@ body {
     background-color: #FCF9EA;
 }
 
-.menuText {
-    font-family: "Ubuntu Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    position: absolute;
-    left: 3%;
-    top: 0.5%;
-}
-
 .home-img {
-    position: absolute;
-    top: 3%;
-    right: 23.3%;
+    position: relative;
+    top: 15%;
     width: 45px;
     height: auto;
     transition: transform 0.3s ease;
@@ -29,10 +19,9 @@ body {
 }
 
 .comp-img {
-    position: absolute;
+    position: relative;
     margin-left: 50px;
-    top: 3%;
-    right: 16.3%;
+    top: 15%;
     width: 45px;
     height: auto;
     transition: transform 0.3s ease;
@@ -44,10 +33,9 @@ body {
 }
 
 .contact-img {
-    position: absolute;
+    position: relative;
     margin-left: 50px;
-    top: 3%;
-    right: 9.5%;
+    top: 15%;
     width: 45px;
     height: auto;
     transition: transform 0.3s ease;
@@ -59,10 +47,9 @@ body {
 }
 
 .alt-img {
-    position: absolute;
+    position: relative;
     margin-left: 50px;
-    top: 3%;
-    right: 3%;
+    top: 15%;
     width: 45px;
     height: auto;
     transition: transform 0.3s ease;
@@ -71,6 +58,19 @@ body {
 
 .alt-img:hover {
     transform: translateY(-4px);
+}
+
+.mainText {
+    position: relative;
+    font-size: 48px;
+    color: #000;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-container {
@@ -82,8 +82,14 @@ body {
 }
 
 .top-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
     background-color: #F7F2EB;
-    width: 98%;
+    width: 40%;
     height: 70px;
     border-radius: 40px;
 }
@@ -106,7 +112,7 @@ body {
 .notifications-container {
     position: relative;
     top: -20px;
-    display: inline;
+    display: flex;
     flex-direction: column;
     gap: 50px;
 }
